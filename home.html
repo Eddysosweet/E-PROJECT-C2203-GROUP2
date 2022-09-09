@@ -19,238 +19,184 @@
 </head>
 
 <body>
-  <menu class="bg m-0 py-3">
-    <div class="container">
-      <div class="row">
-        <div class="col-2">
-          <img src="img/logo.jpg" alt="logo-image" class="logo-image d-flex m-auto pt-2">
+    <menu class="bg m-0 py-3 fixed-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-2">
+                    <img  src="https://unica.vn/media/img/logo-unica.svg" alt="logo-image" class="logo-image d-flex m-auto pt-2">
+                </div>
+                <div class="col-10 list-menu">
+                    <ul class="d-none d-lg-block list-inline m-0 float-end">
+                        <li class="list-inline-item me-4">
+                          <a class="nav-link px-0" href="home.html">Home</a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                          <a class="nav-link px-0" href="contact.html">Contact</a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                          <a class="nav-link px-0" href="login.html">Login</a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                          <a class="nav-link px-0" href="register.html">Register</a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <form class="d-flex">
+                                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                                <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                              </form>
+                        </li>
+                        <li class="list-inline-item me-2">
+                            <i class="text-xl fa-solid fa-cart-shopping"></i>
+                        </li>
+                    </ul>
+                    <div class="d-block d-lg-none float-end">
+                        <button class="btn btn-outline-none p-0" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
+                          <i class='bx bx-menu bx-md bx-flip-vertical'></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="col-10 list-menu">
-          <ul class="d-none d-lg-block list-inline m-0 float-end">
-            <li class="list-inline-item me-4">
-              <a class="nav-link px-0" href="home.html">Home</a>
-            </li>
-            <li class="list-inline-item me-4">
-              <a class="nav-link px-0" href="contact.html">Contact</a>
-            </li>
-            <li class="list-inline-item me-4">
-              <a class="nav-link px-0" href="login.html">Login</a>
-            </li>
-            <li class="list-inline-item me-4">
-              <a class="nav-link px-0" href="register.html">Register</a>
-            </li>
-            <li class="list-inline-item me-4">
-              <form class="d-flex">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                <button class="btn btn-outline-success" type="submit"><i
-                    class="fa-solid fa-magnifying-glass"></i></button>
-              </form>
-            </li>
-            <!-- <li class="list-inline-item me-2">
-              <i class="text-xl fa-solid fa-cart-shopping"></i>
-            </li> -->
-          </ul>
-          <div class="d-block d-lg-none float-end">
-            <button class="btn btn-outline-none p-0" type="button" data-bs-toggle="offcanvas"
-              data-bs-target="#offcanvasWithBothOptions" aria-controls="offcanvasWithBothOptions">
-              <i class='bx bx-menu bx-md bx-flip-vertical'></i>
-            </button>
+        <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions" aria-labelledby="offcanvasWithBothOptionsLabel">
+            <div class="offcanvas-header ">
+              <img class="logo-image " src="https://unica.vn/media/img/logo-unica.svg" alt="">
+              <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i class="text-xl text-danger fa-solid fa-xmark"></i>
+              </button>
+            </div>
+            <div class="offcanvas-body p-0">
+                <ul class="p-0">
+                    <li class="list-group-item list-group-item-action">
+                      <a class="nav-link text-dark" href="home.html">Home</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                      <a class="nav-link text-dark" href="#catch">Contact</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                      <a class="nav-link text-dark" href="login.html">Login</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                      <a class="nav-link text-dark" href="register.html">Register</a>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <form class="d-flex">
+                            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                        </form>
+                    </li>
+                    <li class="list-group-item list-group-item-action">
+                        <i class="text-xl fa-solid fa-cart-shopping"></i>
+                    </li>
+                </ul>
+            </div>
           </div>
+    </menu>
+    <!-- banner -->
+    <div >
+      <div id="banner" class="bg-[url('img/banner.jpg')] mt-16 w-100 
+        justify-content-center d-flex align-items-center" style="height: 550px;">
+          <div class="w-10/12 md:w-6/12 text-white ">
+            <p class="mb-0 text-3xl  md:text-5xl md:text-center font-bold">Khóa học Kinh Doanh </p>
+            <p class="mb-0 py-2"><span class="text-2xl md:text-4xl font-bold">Trên mọi nền tảng: 
+            </span> <span class=" text-3xl md:text-5xl font-bold">TIKTOK, YOUTUBE, ZALO</span></p>
+            <p class="mb-0 pt-3  md:text-lg">Một nhà lãnh đạo tài ba, bên cạnh xuất sắc trong 
+              việc đưa ra các chiến lược điều hành doanh nghiệp. Họ cần phải 
+              giỏi trong khả năng truyền cảm hứng làm việc cho nhân viên. Để 
+              từ đó nhân viên có động lực làm tốt công việc của mình. Chính kỹ 
+              năng truyền lửa và tạo động lực cho nhân viên giúp nhân viên hứng
+              khởi trong công việc.</p>
+          </div>
+      </div>
+      <div class="container py-2">
+          <div class="row">
+              <div class="col-12 col-md-4">
+                <div class="border hover:shadow-xl rounded-md">
+                    <img class="w-100" height="300px" src="img/khoa-hoc-wp-1-350x223.jpg" alt="">
+                    <div class="px-4 py-3" style="font-size:1.2rem;">
+                      <div class="py-3">
+                          <a class="text-orange-500 font-bold "
+                          href="">Lớp học 1 kèm 1</a>
+                          <p>Lớp học dành cho các bạn mới bắt đầu. Chưa có kiến thức nền
+                          về Website và Lập trình căn bản.</p>
+                      </div>
+                      <div class="pb-2">
+                        <span class="font-bold">3.9 triêu/tháng</span>
+                        <p class="mb-0">12 buổi 1 tháng(1 buổi 120p)</p>
+                      </div>
+                      <button
+                      class="bg-orange-500 
+                      text-white font-bold py-2 px-4 border 
+                      rounded">
+                        <a class="hover:text-white" href="#">Chi tiết</a>
+                      </button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="border hover:shadow-xl rounded-md">
+                  <img class="w-100" height="300px" src="img/khoa-hoc-wp-1-350x223.jpg" alt="">
+                  <div class="px-4 py-3" style="font-size:1.2rem;">
+                    <div class="py-3">
+                        <a class="text-orange-500 font-bold "
+                        href="">Lớp học 1 kèm 1</a>
+                        <p>Lớp học dành cho các bạn mới bắt đầu. Chưa có kiến thức nền
+                        về Website và Lập trình căn bản.</p>
+                    </div>
+                    <div class="pb-2">
+                      <span class="font-bold">3.9 triêu/tháng</span>
+                      <p class="mb-0">12 buổi 1 tháng(1 buổi 120p)</p>
+                    </div>
+                    <button
+                    class="bg-orange-500 
+                    text-white font-bold py-2 px-4 border 
+                    rounded">
+                      <a class="hover:text-white" href="#">Chi tiết</a>
+                    </button>
+                  </div>
+              </div>
+          </div>
+          <div class="col-12 col-md-4">
+            <div class="border hover:shadow-xl rounded-md">
+                <img class="w-100" height="300px" src="img/khoa-hoc-wp-1-350x223.jpg" alt="">
+                <div class="px-4 py-3" style="font-size:1.2rem;">
+                  <div class="py-3">
+                      <a class="text-orange-500 font-bold "
+                      href="">Lớp học 1 kèm 1</a>
+                      <p>Lớp học dành cho các bạn mới bắt đầu. Chưa có kiến thức nền
+                      về Website và Lập trình căn bản.</p>
+                  </div>
+                  <div class="pb-2">
+                    <span class="font-bold">3.9 triêu/tháng</span>
+                    <p class="mb-0">12 buổi 1 tháng(1 buổi 120p)</p>
+                  </div>
+                  <button
+                  class="bg-orange-500 
+                  text-white font-bold py-2 px-4 border 
+                  rounded">
+                    <a class="hover:text-white" href="#">Chi tiết</a>
+                  </button>
+                </div>
+            </div>
         </div>
+          </div>
       </div>
     </div>
-    <div class="offcanvas offcanvas-end" data-bs-scroll="true" tabindex="-1" id="offcanvasWithBothOptions"
-      aria-labelledby="offcanvasWithBothOptionsLabel">
-      <div class="offcanvas-header ">
-        <img class="logo-image " src="img/logo.jpg" alt="">
-        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"><i
-            class="text-xl text-danger fa-solid fa-xmark"></i>
-        </button>
-      </div>
-      <div class="offcanvas-body p-0">
-        <ul class="p-0">
-          <li class="list-group-item list-group-item-action">
-            <a class="nav-link text-dark" href="home.html">Home</a>
-          </li>
-          <li class="list-group-item list-group-item-action">
-            <a class="nav-link text-dark" href="#catch">Contact</a>
-          </li>
-          <li class="list-group-item list-group-item-action">
-            <a class="nav-link text-dark" href="login.html">Login</a>
-          </li>
-          <li class="list-group-item list-group-item-action">
-            <a class="nav-link text-dark" href="register.html">Register</a>
-          </li>
-          <li class="list-group-item list-group-item-action">
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit"><i
-                  class="fa-solid fa-magnifying-glass"></i></button>
-            </form>
-          </li>
-          <!-- <li class="list-group-item list-group-item-action">
-            <i class="text-xl fa-solid fa-cart-shopping"></i>
-          </li> -->
-        </ul>
-      </div>
-    </div>
-  </menu>
-  <!-- video -->
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <p class="font-bold text-4xl text-center">Video dạy trực tuyến cho Học Viên</p>
-        <video width="100%" controls>
-          <source src="https://youtu.be/XqZsoesa55w" type="video/mp4">
-        </video>
-      </div>
-      
-    </div>
 
-  </div>
-  <!-- Footer -->
-  <footer class="text-center text-lg-start bg-light text-dark">
-    <!-- Section: Links  -->
-    <section class="">
-      <div class="container text-center text-md-start mt-5">
-        <!-- Grid row -->
-        <div class="row mt-3">
-          <!-- Grid column -->
-          <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
-            <!-- Content -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              <i class="fas fa-gem me-3"></i>EDUCATION TOOLS
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Angular</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">React</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Vue</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Laravel</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-6 col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Products
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Angular</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">React</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Vue</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Laravel</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-6 col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">
-              Useful links
-            </h6>
-            <p>
-              <a href="#!" class="text-reset">Pricing</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Settings</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Orders</a>
-            </p>
-            <p>
-              <a href="#!" class="text-reset">Help</a>
-            </p>
-          </div>
-          <!-- Grid column -->
-
-          <!-- Grid column -->
-          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
-            <!-- Links -->
-            <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
-            <p><i class="fas fa-home me-3"></i> New York, NY 10012, US</p>
-            <p>
-              <i class="fas fa-envelope me-3"></i>
-              info@example.com
-            </p>
-            <p><i class="fas fa-phone me-3"></i> + 01 234 567 88</p>
-            <p><i class="fas fa-print me-3"></i> + 01 234 567 89</p>
-          </div>
-          <!-- Grid column -->
-        </div>
-        <!-- Grid row -->
-      </div>
-    </section>
-    <!-- Section: Links  -->
-    <!-- Copyright -->
-    <div class="text-center p-3" style="background-color:#4791ff;">
-      <!-- Section: Social media -->
-    <section class="d-flex justify-content-center  p-3">
-      <!-- center -->
-      <div>
-        <a href="" class="me-4 text-white">
-          <i class="fab fa-facebook-f"></i>
-        </a>
-        <a href="" class="me-4 text-white">
-          <i class="fab fa-twitter"></i>
-        </a>
-        <a href="" class="me-4 text-white">
-          <i class="fab fa-google"></i>
-        </a>
-        <a href="" class="me-4 text-white">
-          <i class="fab fa-instagram"></i>
-        </a>
-        <a href="" class="me-4 text-white">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="" class="me-4 text-white">
-          <i class="fab fa-github"></i>
-        </a>
-      </div>
-      <!-- center -->
-    </section>
-    <!-- Section: Social media -->
-    <span class="text-white">© 2021 Copyright:</span>
-      
-      <a class="text-white fw-bold" href="https://mdbootstrap.com/">MDBootstrap.com</a>
-    </div>
-    <!-- Copyright -->
-  </footer>
-  <!-- Footer -->
-  <style>
-    .logo-image {
-      width: 40px;
-    }
-
-    .btn:focus,
-    .btn-close:focus {
-      box-shadow: none;
-    }
-
-    .bg {
-      background-color: #fff;
-      box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
-    }
-
-    .list-menu ul li a {
-      font-size: 1.1rem;
-      color: #333;
-    }
-  </style>
+    <style>
+      .logo-image {
+      width: 100px;
+      }
+        .btn:focus, .btn-close:focus {
+          box-shadow: none;
+      }
+        .bg{
+          background-color: #fff;
+          box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+      }
+      .list-menu ul li a{
+          font-size: 1.1rem;
+          color: #333;
+      }
+    </style>
 </body>
 
 </html>
