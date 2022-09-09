@@ -39,25 +39,3 @@
     font-size: 1.3rem;
     font-weight: 600;
 }
-/* menu */
-.logo-image {
-    width: 100px;
-  }
-  .btn:focus, .btn-close:focus {
-    box-shadow: none;
-  }
-  .bg{
-    background-color: #fff;
-    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
-}
-.list-menu ul li a{
-    font-size: 1.1rem;
-    color: #333;
-}
-.menu-img{
-    width: 100px;
-}
-.list-menu ul li a:hover{
-    border-bottom: 2px solid rgba(8, 168, 48, 0.25);
-    color: #333;
-  }
