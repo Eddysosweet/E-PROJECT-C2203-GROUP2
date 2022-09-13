@@ -1,5 +1,5 @@
 .logo-image {
-    width: 100px;
+    width: 40px;
 }
     .btn:focus, .btn-close:focus {
     box-shadow: none;
@@ -29,3 +29,4 @@ input::placeholder {
     height: 160px;
     border-radius: 50%;
 }
+
