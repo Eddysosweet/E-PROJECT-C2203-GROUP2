@@ -49,3 +49,27 @@ input::placeholder {
     font-size: 1.3rem;
     font-weight: 600;
 }
+.information{
+    position: absolute;
+    top: -10%;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    width: 100%;
+    display: none;
+}
+.information_conten{
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 
+    rgb(0 0 0 / 25%) 0px 54px 55px, rgb(0 0 0 / 12%) 0px -12px 30px,
+     rgb(0 0 0 / 12%) 0px 4px 6px, rgb(0 0 0 / 17%) 0px 12px 13px,
+      rgb(0 0 0 / 9%) 0px -3px 5px;
+}
+@media only screen and (min-width: 768px) and (max-width:2560px) {
+    .overlay:hover .information{
+        display: block;
+    }
+}
